@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.headerMenu a {
+  display: inline-block;
+  margin: 0 10px;
+}
