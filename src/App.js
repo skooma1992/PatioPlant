@@ -3,6 +3,8 @@ import Home from "./containers/Home";
 import "./App.css";
 import Header from "./components/Header/index";
 import Hero from "./components/Hero/index";
+import Contact from "./containers/AboutUs";
+import Post from "./containers/Post";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
@@ -10,8 +12,12 @@ function App() {
       <div className='App'>
         <Header />
         <Hero />
-        <Route path='/' component={Home} />
-        <Home />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/contact-us' component={Contact} />
+          <Route path='/post' component={Post} />
+          <Home />
+        </Switch>
       </div>
     </Router>
   );
