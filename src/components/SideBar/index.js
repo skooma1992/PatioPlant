@@ -1,7 +1,7 @@
 import React from "react";
-import './style.css' from 'react'
+import "./style.css";
 const SideBar = props => {
-  return <div>side</div>;
+  return <Card style={{ width: "27%" }}>SideBar</Card>;
 };
 
-export default SideBar
+export default SideBar;
