@@ -1,11 +1,17 @@
 import React from "react";
 import "./style.css";
 
+/**
+ * @author
+ * @function Logo
+ **/
+
 const Logo = props => {
   return (
     <div className='logo'>
-      <a>Patio Plant</a>
+      <a href='#'>Patio Plant</a>
     </div>
   );
 };
+
 export default Logo;

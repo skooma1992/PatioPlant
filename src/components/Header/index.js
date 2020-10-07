@@ -1,14 +1,21 @@
 import React from "react";
 import "./style.css";
+import Link from "react";
+
+/**
+ * @author
+ * @function Header
+ **/
+
 const Header = props => {
   return (
     <header className='header'>
       <nav className='headerMenu'>
-        <a href='#'>Home</a>
-        <a href='#'>About Us</a>
-        <a href='#'>Contact</a>
+        <p>Home</p>
+        <p>Contact us</p>
+        <p>About us</p>
       </nav>
-      <div>Social media links</div>
+      <div>Social Media links</div>
     </header>
   );
 };
