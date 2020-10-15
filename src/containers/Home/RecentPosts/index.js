@@ -12,7 +12,7 @@ const RecentPosts = props => {
     <div style={props.style}>
       <Card style={{ marginBottom: "20px" }}>
         <div className='postImageWrapper'>
-          <img src={require("../../../blogPostImages/lemon.jpg")} />
+          <img src={require("../../../blogPostImages/recentpostmain.jpg")} />
         </div>
 
         <div style={{ textAlign: "center" }}>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Card from "../../components/UI/Card";
-import Sidebar from "../../components/Sidebar";
+
 import RecentPosts from "./RecentPosts";
 
 import blogData from "../../data/blog.json";
@@ -20,12 +20,15 @@ const ImageGallary = props => (
     <section style={{ width: props.largeWidth }}>
       <div className='mainImageWrapper'>
         <img
-          src={require("../../blogPostImages/" + props.imagesArray[1])}
+          src={require("../../blogPostImages/" + props.imagesArray[5])}
           alt=''
         />
       </div>
     </section>
-    <section className={"sideImageWrapper"} style={{ width: props.smallWidth }}>
+    <section
+      className={"sideImageWrapper"}
+      style={{ width: "27%", textAlign: "center" }}
+    >
       {props.imagesArray.map(image => (
         <SideImage
           height={props.sideImageHeight}
